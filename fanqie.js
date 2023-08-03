@@ -1,10 +1,5 @@
-/*
-脚本功能：番茄小说去广告
-下载地址：appstore
-软件版本：所有
-脚本作者：未知
-更新时间：2023-08-03
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+#!name=番茄小说
+#!desc=番茄小说去广告
 
 [rewrite_local]
 ^https?://.+.pangolin-sdk-toutiao.com/api/ad/union/sdk/(get_ads|stats|settings)/ - reject
@@ -57,5 +52,3 @@ IP-CIDR,180.96.2.114/32,REJECT,no-resolve
 
 [MITM]
 hostname = %APPEND% .pangolin-sdk-toutiao,.pangolin-sdk-toutiao.,.pstatp.com,.pstatp.com.,.pglstatp-toutiao.com.,.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.,*default.ixigua.com
-
-*/
