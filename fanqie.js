@@ -2,32 +2,19 @@
 #!desc=番茄小说去广告
 
 [rewrite_local]
-^https?://.+.pangolin-sdk-toutiao.com/api/ad/union/sdk/(get_ads|stats|settings)/ - reject 
-[rewrite_local]
+^https?://.+.pangolin-sdk-toutiao.com/api/ad/union/sdk/(get_ads|stats|settings)/ - reject
 ^https?://.+.pglstatp-toutiao.com/.+/toutiao.mp4 - reject
-[rewrite_local]
 ^https?://.+.(pglstatp-toutiao|pstatp).com/(obj|img)/(ad-app-package|ad)/.+ - reject
-[rewrite_local]
 ^https?://.+.(pglstatp-toutiao|pstatp).com/(obj|img)/web.business.image/.+ - reject
-[rewrite_local]
 ^https?://.+.(pglstatp-toutiao|pstatp).com/obj/ad-pattern/renderer - reject
-[rewrite_local]
 ^https?://gurd.snssdk.com/src/server/v3/package - reject
-[rewrite_local]
 ^https?://.+.byteimg.com/tos-cn-i-1yzifmftcy/(.+)-jpeg.jpeg - reject
-[rewrite_local]
 ^https?://.+.pstatp.com/obj/mosaic-legacy/.+?from=ad - reject
-[rewrite_local]
 ^https?://.+.pstatp.com/bytecom/resource/track-log/src/.+ - reject
-[rewrite_local]
 ^https?://.+.snssdk.com/video/play/1/toutiao/.+/mp4 - reject
-[rewrite_local]
 ^https?://.+.snssdk.com/api/ad/.+ - reject
-[rewrite_local]
 ^http://.+.byteimg.com/ad-app-package - reject
-[rewrite_local]
 ^http://.+.byteimg.com/web.business.image - reject
-[rewrite_local]
 ^https?://.+?.snssdk.com/motor/operation/activity/display/config/V2/ - reject
   
 [filter_local]
