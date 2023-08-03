@@ -1,8 +1,7 @@
 #!name=番茄小说
 #!desc=番茄小说去广告
 
-[rewrite_local]
-  
+
 ^https?://.+.pangolin-sdk-toutiao.com/api/ad/union/sdk/(get_ads|stats|settings)/ - reject 
 ^https?://.+.pglstatp-toutiao.com/.+/toutiao.mp4 - reject
 ^https?://.+.(pglstatp-toutiao|pstatp).com/(obj|img)/(ad-app-package|ad)/.+ - reject
