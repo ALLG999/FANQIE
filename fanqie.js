@@ -1,7 +1,14 @@
-#!name=番茄小说
-#!desc=番茄小说去广告
+/*
+脚本功能：番茄去广告
+下载地址：appstore
+软件版本：所有
+脚本作者：未知
+更新时间：2023-08-03
+使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+*/
 
-[filter_local]
+[rewrite_local]
+
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 - reject
 ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ - reject
@@ -16,7 +23,9 @@
 ^http:\/\/.+\.byteimg\.com\/ad-app-package - reject
 ^http:\/\/.+\.byteimg\.com\/web\.business\.image - reject
 ^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
-  
+
+[filter_local]
+
 DOMAIN,p6-ad-sign.byteimg.com,REJECT
 DOMAIN,p9-ad-sign.byteimg.com,REJECT
 DOMAIN-SUFFIX,byteimg.com,DIRECT
