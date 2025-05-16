@@ -4,6 +4,7 @@
 软件版本：所有
 脚本作者：未知
 更新时间：2023-10-31
+此版本停更，新版在https://github.com/ALLG999/newcloud/blob/master/FQXS.js
 使用声明：⚠️好像并没什么卵用，可能是我使用方法有问题吧~
 */
 
